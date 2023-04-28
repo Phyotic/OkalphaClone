@@ -1,0 +1,205 @@
+:root {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    --boxBlue: #005cef;
+    --boxRed: #ff1f25;
+    --darkBlue: #003286;
+    --zOverlayContent: 3;
+    --zContent: 2;
+    --zAnimation: 1;
+    --zBackground: 0;
+}
+
+.white-text {
+    color: white;
+}
+
+.dark-blue-text {
+    color: var(--darkBlue);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* scroll-behavior: smooth; */
+}
+
+body {
+    overflow-x: hidden;
+}
+
+hr {
+    color: black;
+    width: 100%;
+    height: 7px;
+    background-color: black;
+}
+
+#box-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.box {
+    height: 140vw;
+}
+
+.box:nth-child(even) {
+    background-color: var(--boxBlue);
+}
+
+.box:nth-child(odd) {
+    background-color: white;
+}
+
+#box-5 {
+    background-color: var(--boxRed);
+}
+
+/* First section: Navigation and front page.*/
+
+#nav-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#nav-hider {
+    display: block;
+    z-index: var(--zContent);
+    padding: 1.5rem 1.5rem;
+}
+
+#name-burger-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.8rem;
+}
+
+#site-name-container {
+    flex-basis: 90%;
+    justify-content: left;
+}
+
+#site-name-container h3{
+    display: inline;
+    font-size: 1.2rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#icon-menu-container {
+    display: flex;
+    flex-basis: 10%;
+    justify-content: right;
+    cursor: pointer;
+}
+
+#nav-menu-ul {
+    position: absolute;
+    width: 100%;
+    margin-top: 80px;
+    opacity: 0;
+    padding: 0 1.5rem;
+    transition: 0.5s;
+    z-index: var(--zOverlayContent);
+    background-color: white;
+}
+
+.nav-menu-item {
+    list-style-type: none;
+    text-align: left;
+    font-size: 1.5rem;
+    margin: .9rem 0;
+}
+
+/* Front page section */
+#top-section {
+    position: relative;
+    margin-top: 10%;
+    z-index: var(--zContent);
+}
+
+#sliding-square {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: -90%;
+    width: 400%;
+    height: 400%;
+}
+
+#top-section p {
+    font-size: 3.5rem;
+    font-weight: 750;
+    margin: auto 1rem;
+    z-index: var(--zContent);
+}
+
+#arrow-link {
+    display:flow-root;
+    width:fit-content;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+#arrow-down {
+    width: auto;
+    height: 70px;
+    display: block;
+}
+
+/* Second section: About us */
+
+#box-2 {
+    height: 580px;
+    line-height: 2rem;
+}
+
+#about {
+    padding: 40px 30px;
+    color: white;
+}
+
+#about p{
+    margin-top: 30px;
+    line-height: 1.6rem;
+}
+
+/* Third section: Our Work */
+#box-3 {
+    height: 630px;
+}
+
+.section3-hr {
+    width: 85%;
+    height: 5px;
+    margin: 7% auto;
+    background-color: var(--boxBlue);
+}
+
+#section3-header {
+    color: var(--boxBlue);
+    font-size: 2.5rem;
+    margin: 55px 7% -20px;
+
+    /* border: 3px solid red; */
+}
+
+
+
+
+/* TODO: clicking a link turns transfers the .active-menu class. */
+.active-menu {
+    color: blue;
+}
+
+.nav-menu-item:hover{
+    color: darkcyan;
+}
+
+/* @media screen and (min-width: 400px) {
+
+} */

@@ -63,38 +63,138 @@
                 <h1 id="section3-header">Our Work.</h1>
                 <hr class="section3-hr">
                 <div>
-                    <p class="section3-text-above">Brand Exploration</p>
-                    <h2 class="section3-company">Stamp.</h2>
+                    <div class="section3-container">
+                        <div class="section3-text-and-arrow">
+                            <div class="section3-text">
+                                <p class="section3-text-above">Brand Exploration</p>
+                                <h2 class="section3-company">Stamp.</h2>
+                            </div>
+                            <div class="section3-arrow-container">
+                                <a href="#box-3">
+                                    <img src="images/arrow-blue.svg" width="50" height="62" class="section3-arrow">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <hr class="section3-hr">
                 </div>
                 <div>
-                    <p class="">Anamorphic Billboard</p>
-                    <h2>Innovocean.</h2>
+                    <div class="section3-container">
+                        <div class="section3-text-and-arrow">
+                            <div class="section3-text">
+                                <p class="section3-text-above">Anamorphic BillBoard</p>
+                                <h2 class="section3-company">Innovocean.</h2>
+                            </div>
+                            <div class="section3-arrow-container">
+                                <a href="#box-3">
+                                    <img src="images/arrow-blue.svg" width="50" height="62" class="section3-arrow">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <hr class="section3-hr">
                 </div>
                 <div>
-                    <p>Project Headers</p>
-                    <h2>MakeReign.</h2>
+                    <div class="section3-container">
+                        <div class="section3-text-and-arrow">
+                            <div class="section3-text">
+                                <p class="section3-text-above">Project Headers</p>
+                                <h2 class="section3-company">MakeReign.</h2>
+                            </div>
+                            <div class="section3-arrow-container">
+                                <a href="#box-3">
+                                    <img src="images/arrow-blue.svg" width="50" height="62" class="section3-arrow">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <hr class="section3-hr">
                 </div>
                 <div>
-                    <p>Product Animations</p>
-                    <h2>Sanlam Indie.</h2>
+                    <div class="section3-container">
+                        <div class="section3-text-and-arrow">
+                            <div class="section3-text">
+                                <p class="section3-text-above">Product Animations</p>
+                                <h2 class="section3-company">Sanlam Indie.</h2>
+                            </div>
+                            <div class="section3-arrow-container">
+                                <a href="#box-3">
+                                    <img src="images/arrow-blue.svg" width="50" height="62" class="section3-arrow">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <hr class="section3-hr">
                 </div>
                 <div>
-                    <p>Brand Visual</p>
-                    <h2>Wolf&Whale</h2>
+                    <div class="section3-container">
+                        <div class="section3-text-and-arrow">
+                            <div class="section3-text">
+                                <p class="section3-text-above">Brand Visual</p>
+                                <h2 class="section3-company">Wolf&Whale.</h2>
+                            </div>
+                            <div class="section3-arrow-container">
+                                <a href="#box-3">
+                                    <img src="images/arrow-blue.svg" width="50" height="62" class="section3-arrow">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <hr class="section3-hr">
                 </div>
             </section>
         </div>
+
         <div class="box" id="box-4">
             <section>
-                <h1>Services.</h1>
-                <p>Storyboarding. Art Direction. ‍Creative Direction. Sound Design. Illustration. 2D Animation. 3D Animation. UI Animation. Product Rendering. Photography. Storyboarding. Art Direction. Creative Direction. Sound Design. Illustration. 2D Animation. 3D Animation. UI Animation. Product Rendering. Photography. Creative Direction. Storyboarding. Art Direction.</p>
+                <div id="services-container">
+                    <h1 id="services-header">Services.</h1>
+                    <div class="background-bar">
+                        <div class="foreground-bar" id="foreground-bar-1"></div>
+                    </div>
+                    <div class="background-bar">
+                        <div class="foreground-bar" id="foreground-bar-2"></div>
+                    </div>
+                    <div class="background-bar">
+                        <div class="foreground-bar" id="foreground-bar-3"></div>
+                    </div>
+                    <div class="background-bar">
+                        <div class="foreground-bar" id="foreground-bar-4"></div>
+                    </div>
+
+                    <!-- TODO: repeating text + call method on clicked item -->
+                    <div id="services-text-and-overlay-container">
+                        <div id="types-of-services-container">
+                            <a class="service-text" onclick="displayService('Storyboarding')">Storyboarding.</a>
+                            <a class="service-text" onclick="displayService('Art Direction')">Art Direction.</a>
+                            <a class="service-text" onclick="displayService('Creative Direction')">Creative Direction.</a>
+                            <a class="service-text" onclick="displayService('Sound Design')">Sound Design.</a>
+                            <a class="service-text" onclick="displayService('Illustration')">Illustration.</a>
+                            <a class="service-text" onclick="displayService('2D Animation')">2D Animation.</a>
+                            <a class="service-text" onclick="displayService('3D Animation')">3D Animation.</a>
+                            <a class="service-text" onclick="displayService('UI Animation')">UI Animation.</a>
+                            <a class="service-text" onclick="displayService('Product Rendering')">Product Rendering.</a>
+                            <a class="service-text" onclick="displayService('Photography')">Photography.</a>
+                            <a class="service-text" onclick="displayService('Storyboarding')">Storyboarding.</a>
+                            <a class="service-text" onclick="displayService('Art Direction')">Art Direction.</a>
+                            <a class="service-text" onclick="displayService('Creative Direction')">Creative Direction.</a>
+                            <a class="service-text" onclick="displayService('Sound Design')">Sound Design.</a>
+
+                            <div id="overlay-border">
+                                <div id="service-overlay">
+                                    <a id="yellow-arrow-link"><img src="images/yellow-arrow.svg" id="yellow-arrow"></a>
+                                    <h3>Storyboarding</h3>
+                                    <p>We like drawing pictures just as much as we like animating them. Yup, we still draw things with our hands. Whether it’s an app run-through or a detailed animated narrative, storyboarding plays a key role in springboarding final picture. *sharpens Apple Pencil*</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
             </section>
         </div>
+
         <div class="box" id="box-5">
             <section>
                 <h1>Team Okalpha</h1>
@@ -135,6 +235,7 @@
                 </div>
             </section>
         </div>
+
         <div class="box" id="box-6">
             <footer>
                 <h1>Say Hello.</h1>

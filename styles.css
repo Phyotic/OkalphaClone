@@ -3,6 +3,8 @@
     --boxBlue: #005cef;
     --boxRed: #ff1f25;
     --darkBlue: #003286;
+    --servicesBlue: #0048bc;
+    --loadingBarYellow: #ffdd18;
     --zOverlayContent: 3;
     --zContent: 2;
     --zAnimation: 1;
@@ -170,25 +172,156 @@ hr {
 
 /* Third section: Our Work */
 #box-3 {
-    height: 630px;
+    height: 620px;
 }
 
 .section3-hr {
     width: 85%;
     height: 5px;
-    margin: 7% auto;
+    margin: 5% auto;
     background-color: var(--boxBlue);
 }
 
 #section3-header {
     color: var(--boxBlue);
     font-size: 2.5rem;
-    margin: 55px 7% -20px;
+    margin: 55px 7% -5px;
 
     /* border: 3px solid red; */
 }
 
+.section3-text-and-arrow {
+    display: flex;
+}
 
+.section3-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 90%;
+    color: var(--boxRed);
+    margin: 0 7%;
+    line-height: 1.8rem;
+}
+
+.section3-text-above {
+    font-weight: 700;
+}
+
+.section3-arrow-container {
+    flex-basis: 10%;
+    justify-content: right;
+    margin-right: 7%;
+
+    transform: rotate(-90deg);
+}
+
+.section3-arrow {
+    width: 25px;
+    height: auto;
+}
+
+/* Section 4: Services */
+
+#box-4 {
+    height: 690px;
+}
+
+#services-container {
+    padding: 2.2rem 1.5rem;
+}
+
+#services-header {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.background-bar {
+    position: relative;
+    background-color: var(--servicesBlue);
+    height: 40px;
+    width: 100%;
+    margin: 1.2rem auto;
+}
+
+.foreground-bar {
+    position: absolute;
+    background-color: var(--loadingBarYellow);
+    height: 100%;
+    z-index: 1;
+}
+
+#foreground-bar-1 {
+    width: 90%;
+}
+
+#foreground-bar-2 {
+    width: 80%;
+}
+
+#foreground-bar-3 {
+    width: 65%;
+}
+
+#foreground-bar-4 {
+    width: 50%;
+}
+
+#services-text-and-overlay-container {
+    margin: 2rem auto;
+}
+
+#types-of-services-container {
+    position: relative;
+    text-align: justify;
+    color: white;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    overflow: hidden;;
+}
+
+.service-text {
+    cursor: pointer;
+}
+#overlay-border {
+    overflow: hidden;
+}
+
+#service-overlay {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--servicesBlue);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+
+    /*TODO: implement closing feature*/
+    left: -40vw;
+}
+
+#yellow-arrow-link {
+    display: flex;
+    justify-content: right;
+    padding: 0px 11px;
+}
+
+#yellow-arrow {
+    width: 26px;
+    transform: rotate(90deg);
+}
+
+#service-overlay h3 {
+    font-size: 1.5rem;
+}
+
+#service-overlay p {
+    font-size: .9rem;
+    text-align: left;
+    line-height: 1.2rem;
+    margin: 10px auto;
+}
 
 
 /* TODO: clicking a link turns transfers the .active-menu class. */

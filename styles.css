@@ -424,6 +424,64 @@ hr {
     top: 1px;
 }
 
+/* Section 6: Footer */
+
+#box-6 {
+    padding: 20px;
+    height: 450px;
+    color: white;
+    overflow: hidden;
+    position: relative;;
+}
+
+#footer-header {
+    font-size: 2.5rem;
+    margin: 5px auto;
+}
+
+#footer-hr {
+    background-color: white;
+    height: 5px;
+}
+
+#email-container {
+    margin: 25px 1px;
+}
+
+#email-label {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#company-email {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#address-container {
+    line-height: 1.6rem;
+}
+
+#address-label {
+    font-style: normal;
+    font-weight: 700;
+}
+
+#address-list {
+    font-style: normal;
+    list-style-type: none;
+}
+
+#round-container {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    height: 600px;
+    width: 500px;
+    border-radius: 50%;
+    background-color: var(--loadingBarYellow);
+}
+
 /* TODO: clicking a link turns transfers the .active-menu class. */
 .active-menu {
     color: blue;

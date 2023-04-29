@@ -283,6 +283,7 @@ hr {
 .service-text {
     cursor: pointer;
 }
+
 #overlay-border {
     overflow: hidden;
 }
@@ -323,6 +324,105 @@ hr {
     margin: 10px auto;
 }
 
+/* Section 5: Team Okalpha */
+#box-5 {
+    height: 2500px;
+}
+
+#team-div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#team-alpha-container {
+    font-size: 1.8rem;
+    margin: 25px 10px;
+    color: white;
+}
+
+.person-container {
+    margin: 5px 10px;
+    height: 325px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container {
+    position: relative;
+    height: 220px;
+}
+
+.background-frame {
+    position: absolute;
+    z-index: 0;
+    height: auto;
+}
+
+.person-profile-pic {
+    position: absolute;
+    top: 0px;
+    left: 14px;
+    z-index: 1;
+    height: auto;
+    width: 187px;
+}
+
+.person-name {
+    color: white;
+}
+
+.person-role {
+    color: white;
+    opacity: .7;
+}
+
+.person-container:nth-child(odd) {
+    margin-left: 70px;
+}
+
+#lawrence .image-container .person-profile-pic{
+    height: auto;
+    width: 190px;
+    left: 10px;
+    top: 1px;
+}
+
+#titan .image-container .person-profile-pic{
+    height: auto;
+    width: 180px;
+    left: 19px;
+    top: 1px;
+}
+
+#jade .image-container .person-profile-pic{
+    height: auto;
+    width: 186px;
+    left: 14px;
+    top: 1px;
+}
+
+#dillan .image-container .person-profile-pic{
+    height: auto;
+    width: 180px;
+    left: 20px;
+    top: 1px;
+}
+
+#mishka .image-container .person-profile-pic{
+    height: auto;
+    width: 193px;
+    left: 8px;
+    top: -1px;
+}
+
+#luke .image-container .person-profile-pic{
+    height: auto;
+    width: 186px;
+    left: 14px;
+    top: 1px;
+}
 
 /* TODO: clicking a link turns transfers the .active-menu class. */
 .active-menu {
